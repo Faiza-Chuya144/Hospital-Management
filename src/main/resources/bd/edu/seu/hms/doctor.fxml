@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.hms.Controller.Doctor.DoctorController">
+   <children>
+      <Label layoutX="276.0" layoutY="40.0" text="Doctor Registration" textFill="#1aabd7">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="89.0" text="Doctor No. :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="123.0" text="Doctor Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="161.0" text="Specialization :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="198.0" text="Qualification : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="228.0" text="Visiting Fee :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="262.0" text="Phone :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="290.0" text="Room No. :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="128.0" layoutY="87.0" />
+      <TextField fx:id="nameField" layoutX="128.0" layoutY="120.0" />
+      <TextField fx:id="specializationField" layoutX="128.0" layoutY="159.0" />
+      <TextField fx:id="qualificationField" layoutX="128.0" layoutY="196.0" />
+      <TextField fx:id="feeField" layoutX="128.0" layoutY="226.0" />
+      <TextField fx:id="phoneField" layoutX="128.0" layoutY="259.0" />
+      <TableView fx:id="doctorTable" layoutX="302.0" layoutY="101.0" prefHeight="194.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="54.0" text="No." />
+          <TableColumn fx:id="nameCol" prefWidth="62.0" text="Name" />
+            <TableColumn fx:id="specializationCol" prefWidth="93.0" text="Specialization" />
+            <TableColumn fx:id="qualificationCol" prefWidth="92.0" text="Qualification" />
+            <TableColumn fx:id="feeCol" prefWidth="61.0" text="Fee" />
+            <TableColumn fx:id="phoneCol" prefWidth="60.0" text="Phone" />
+            <TableColumn fx:id="roomCol" prefWidth="74.0" text="Room No." />
+        </columns>
+      </TableView>
+      <TextField fx:id="roomField" layoutX="128.0" layoutY="288.0" />
+      <ToolBar layoutX="194.0" layoutY="383.0" prefHeight="40.0" prefWidth="293.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="52.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#update" text="Update" />
+            <Button mnemonicParsing="false" onAction="#delete" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="48.0" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="59.0" text="Exit" />
+         </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

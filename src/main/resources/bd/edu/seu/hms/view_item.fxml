@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.hms.Controller.Pharmacist.VIewItemsController">
+   <children>
+      <Label layoutX="311.0" layoutY="14.0" prefHeight="32.0" prefWidth="179.0" text="View Items" textFill="#1aabd7">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="itemTable" layoutX="57.0" layoutY="85.0" prefHeight="180.0" prefWidth="670.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="85.0" text="Item Id" />
+            <TableColumn fx:id="nameCol" prefWidth="115.0" text=" Name" />
+            <TableColumn fx:id="descriptionCol" prefWidth="181.0" text="Description" />
+            <TableColumn fx:id="sellCol" prefWidth="103.0" text="Sell price" />
+            <TableColumn fx:id="buyCol" minWidth="0.0" prefWidth="107.0" text="Buy price" />
+            <TableColumn fx:id="quantityCol" prefWidth="82.0" text="Quantity" />
+         </columns>
+      </TableView>
+      <Label layoutX="255.0" layoutY="282.0" text="Selected Product Info / Last Added Product info">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="311.0" text="Item Id :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="342.0" text="Item Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="373.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="401.0" text="Sell Price :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="428.0" text="Buy Price :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="311.0" text="Quantity :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="342.0" text="Status :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="373.0" text="Medicine Image :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="idFx" layoutX="120.0" layoutY="313.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="nameFx" layoutX="120.0" layoutY="344.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="descriptionFx" layoutX="120.0" layoutY="375.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="sellFx" layoutX="120.0" layoutY="403.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="buyFx" layoutX="108.0" layoutY="430.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="quantityFx" layoutX="498.0" layoutY="313.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="statusFx" layoutX="498.0" layoutY="344.0" prefHeight="17.0" prefWidth="119.0" />
+      <ImageView fx:id="imageFx" fitHeight="107.0" fitWidth="131.0" layoutX="529.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="709.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="25.0" prefWidth="55.0" text="Close" />
+      <TextField fx:id="searchInput" layoutX="68.0" layoutY="51.0" prefHeight="25.0" prefWidth="433.0" promptText="Search By Item ID" />
+   </children>
+</AnchorPane>
